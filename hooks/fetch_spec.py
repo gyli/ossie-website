@@ -51,7 +51,7 @@ _definitions_markdown = None
 
 def _make_front_matter():
     now = datetime.now(timezone.utc)
-    date_str = now.strftime("%-d %B %Y")
+    date_str = f"{now.day} {now.strftime('%B %Y')}"
     time_str = now.strftime("%H:%M UTC")
     return (
         "---\n"
